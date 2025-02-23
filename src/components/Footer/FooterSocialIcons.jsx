@@ -7,13 +7,13 @@ const FooterSocialIcons = () => {
     <div className="text-[#fdfdfd] flex md:flex-row flex-col md:justify-center justify-start items-start md:space-x-4 text-lg font-semibold mt-10">
       <p>Follow Us</p>
       <div className="flex  space-x-3 md:mt-0 mt-3">
-        <span>
+        <span className="cursor-pointer">
           <FaYoutube size={25} />
         </span>
-        <span>
+        <span className="cursor-pointer">
           <FaXTwitter size={25} />
         </span>
-        <span>
+        <span className="cursor-pointer">
           <FaLinkedin size={25} />
         </span>
       </div>

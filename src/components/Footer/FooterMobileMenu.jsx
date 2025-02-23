@@ -93,7 +93,7 @@ const FooterMobileMenu = () => {
   return (
     <ul className="text-white mt-10 block md:hidden">
       {footerMenu.map(({ id, menu, submenus }) => (
-        <li key={id} className="w-full">
+        <li key={id} className="w-full cursor-pointer">
           {/* Menu item */}
           <div
             className="flex justify-between items-center cursor-pointer py-2"

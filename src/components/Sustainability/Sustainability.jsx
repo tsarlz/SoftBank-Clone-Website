@@ -27,7 +27,7 @@ const Sustainability = () => {
     <div className="max-w-[60rem] mx-auto md:pt-10 pt-5 ">
       {/* Title */}
       <div className=" mx-auto md:mb-10 mb-5 lg:pl-0 pl-5">
-        <p className="sm:text-3xl text-xl  font-semibold hover:underline decoration-[1.5px] underline-offset-4 group flex space-x-3 items-center text-[#333333]">
+        <p className="sm:text-3xl text-xl  font-semibold hover:underline decoration-[1.5px] underline-offset-4 group flex space-x-3 items-center text-[#333333] cursor-pointer">
           <span>Sustainability</span>
           <GoArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
         </p>
@@ -37,7 +37,7 @@ const Sustainability = () => {
           sustains.map(({ id, imgUrl, title, content }, i) => (
             <li
               key={id}
-              className={`relative overflow-hidden group
+              className={`relative overflow-hidden group cursor-pointer
           ${
             i === 0
               ? "sm:col-span-2 md:col-span-2 md:row-span-2 h-[24rem]" // Larger item

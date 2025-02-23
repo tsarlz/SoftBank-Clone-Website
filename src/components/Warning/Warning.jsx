@@ -37,9 +37,8 @@ const Warning = () => {
     <div className="max-w-[60rem] mx-auto md:pt-10 pt-5 ">
       {/* Title */}
       <div className=" mx-auto md:mb-10 mb-5 lg:pl-0 pl-5">
-        <p className="sm:text-3xl text-xl font-semibold hover:underline decoration-[1.5px] underline-offset-4 group flex space-x-3 items-center text-[#333333]">
+        <p className="sm:text-3xl text-xl font-semibold text-[#333]">
           <span>Warning</span>
-          <GoArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
         </p>
       </div>
       {/* Content */}
@@ -49,13 +48,13 @@ const Warning = () => {
             warnings.map(({ id, content }) => (
               <li key={id}>
                 <p className="md:text-base text-xs mb-2">Feb. 12, 2025</p>
-                <p className="text-blue-400 hover:underline decoration-[1.5px] underline-offset-4 md:text-lg text-base">
+                <p className="text-blue-400 hover:underline decoration-[1.5px] underline-offset-4 md:text-lg text-base cursor-pointer">
                   {content}
                 </p>
               </li>
             ))}
 
-          <span className=" w-full flex justify-end items-center space-x-2 mt-3 group md:text-lg text-base">
+          <span className=" w-full flex justify-end items-center space-x-2 mt-3 group md:text-lg text-base cursor-pointer">
             <span className="group-hover:underline decoration-[1.5px] underline-offset-4">
               Warnings
             </span>

@@ -48,7 +48,7 @@ const News = () => {
   return (
     <div className="flex  justify-center items-center sm:mt-10 mt-5 md:mx-5 lg:mx-0">
       <div className="max-w-[60rem] md:mx-0 sm:mx-20 mx-0">
-        <p className="flex justify-self-start-start items-center space-x-5 text-xl group mb-2 sm:ml-0 ml-5 ">
+        <p className="flex justify-self-start-start items-center space-x-5 text-xl group mb-2 sm:ml-0 ml-5 cursor-pointer">
           <span className="sm:text-3xl text-xl">News</span>
           <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
         </p>
@@ -57,7 +57,10 @@ const News = () => {
           {/* News 1 */}
           {wBgNews &&
             wBgNews.map(({ id, content }) => (
-              <div key={id} className="relative w-full group overflow-hidden ">
+              <div
+                key={id}
+                className="relative w-full group overflow-hidden  cursor-pointer"
+              >
                 {/* Background Image with Hover Scale */}
                 <img
                   className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110 "
@@ -102,7 +105,7 @@ const News = () => {
             nBgNews.map(({ id, icon, content, bText }) => (
               <li
                 key={id}
-                className="flex md:py-5 py-3  w-full border border-transparent hover:border-black hover:border-dotted transition group"
+                className="flex md:py-5 py-3  w-full border border-transparent hover:border-black hover:border-dotted  cursor-pointer transition group"
               >
                 {/* Icon */}
                 <div className="sm:px-8 px-4 border-r border-black flex items-start">

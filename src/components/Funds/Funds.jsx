@@ -17,10 +17,10 @@ const Funds = () => {
   return (
     <div className="max-w-[60rem] md:pt-10 pt-5 mx-auto">
       {/* Title */}
-      <div className="flex justify-center items-center w-full md:mb-10 mb-5">
+      <div className="flex justify-center items-center w-full md:mb-10 mb-5 ">
         <h2 className="sm:text-3xl text-xl text-[#333]">Our Funds</h2>
       </div>
-      <div className="bg-white flex md:flex-row flex-col justify-center items-center group overflow-hidden">
+      <div className="bg-white flex md:flex-row flex-col justify-center items-center group overflow-hidden cursor-pointer">
         {/* Image */}
         <div className="overflow-hidden md:w-3/4 w-full">
           <img
@@ -29,8 +29,8 @@ const Funds = () => {
           />
         </div>
         {/* Text */}
-        <div className="flex items-center justify-center md:w-1/4 w-full mx-8 group-hover:underline decoration-[1.5px] underline-offset-4 md:py-0 py-3">
-          <h3 className="lg:text-3xl md:text-2xl text-xl mx-3  ">
+        <div className="flex items-center justify-center md:w-1/4 w-full mx-8 group-hover:underline decoration-[1.5px] underline-offset-4 md:py-0 py-3 ">
+          <h3 className="lg:text-3xl md:text-2xl text-xl mx-3   ">
             SoftBank Vison Fund
             <MdContentCopy size={15} className="inline ml-2" />
           </h3>
@@ -43,7 +43,7 @@ const Funds = () => {
         {funds.map(({ id, imgUrl, text }) => (
           <div
             key={id}
-            className="flex justify-start items-center bg-white md:w-1/2 w-full group "
+            className="flex justify-start items-center bg-white md:w-1/2 w-full group cursor-pointer"
           >
             <div className="overflow-hidden">
               <img

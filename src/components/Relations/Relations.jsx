@@ -33,7 +33,7 @@ const Relations = () => {
     <div className="max-w-[60rem] mx-auto md:pt-10 pt-5 ">
       {/* Title */}
       <div className=" mx-auto md:mb-10 mb-5 lg:pl-0 pl-5">
-        <p className="sm:text-3xl text-xl font-semibold hover:underline decoration-[1.5px] underline-offset-4 group flex space-x-3 items-center text-[#333333]">
+        <p className="sm:text-3xl text-xl font-semibold hover:underline decoration-[1.5px] underline-offset-4 group flex space-x-3 items-center text-[#333333] cursor-pointer">
           <span>Investor Relations</span>
           <GoArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
         </p>
@@ -45,7 +45,7 @@ const Relations = () => {
             realtions.map(({ id, content }) => (
               <li key={id}>
                 <p className="md:text-base text-xs mb-2">Feb. 12, 2025</p>
-                <p className="text-blue-400 hover:underline decoration-[1.5px] underline-offset-4 md:text-lg text-base">
+                <p className="text-blue-400 hover:underline decoration-[1.5px] underline-offset-4 md:text-lg text-base cursor-pointer">
                   {content}
                 </p>
               </li>
@@ -65,21 +65,26 @@ const Relations = () => {
           relationIcon.map(({ id, svgUrl, text }) => (
             <li
               key={id}
-              className="flex flex-col justify-center items-center space-y-3"
+              className="flex flex-col justify-center items-center space-y-3 group cursor-pointer"
             >
               <img
                 src={svgUrl}
                 className="md:p-1 p-0 border-2 rounded-full border-[#333]"
                 alt={`${text} SVG `}
               />
-              <p className="md:text-lg text-base text-center">{text}</p>
+              <p className="md:text-lg text-base text-center group-hover:underline decoration-[1.5px] underline-offset-4 group flex space-x-3 items-center text-[#333333]">
+                {text}
+              </p>
             </li>
           ))}
       </ul>
       <ul className="flex md:flex-row flex-col md:gap-10 gap-5 mt-10 w-full lg:px-0 px-5">
         {relationBanner &&
           relationBanner.map(({ id, imgUrl }) => (
-            <li key={id} className=" bg-white md:w-1/2 w-full">
+            <li
+              key={id}
+              className=" bg-white md:w-1/2 w-full group cursor-pointer"
+            >
               <img src={imgUrl} alt={imgUrl} />
               <div className=" w-full flex justify-end items-center space-x-2 my-3 pr-3 ">
                 <span className="group-hover:underline decoration-[1.5px] underline-offset-4">

@@ -98,7 +98,7 @@ const Footer = () => {
     <div className="bg-[#535557]">
       <div className="max-w-[60rem] mx-auto pt-10 lg:px-0 px-5">
         {/* Print Icon */}
-        <div className="flex justify-start items-center text-[#fdfdfd] text-xl space-x-2 font-semibold">
+        <div className="flex justify-start items-center text-[#fdfdfd] text-xl space-x-2 font-semibold cursor-pointer">
           <FiPrinter />
           <span>Print</span>
         </div>

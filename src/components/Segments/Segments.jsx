@@ -6,7 +6,7 @@ const Segments = () => {
     <div className=" bg-[#f1f1f3]  md:pt-10 pt-5 ">
       {/* Title */}
       <div className="max-w-[60rem] mx-auto md:mb-10 mb-5 lg:pl-0 pl-5">
-        <p className="sm:text-3xl text-xl font-semibold hover:underline decoration-[1.5px] underline-offset-4 group flex space-x-3 items-center text-[#333333]">
+        <p className="sm:text-3xl text-xl font-semibold hover:underline decoration-[1.5px] underline-offset-4 group flex space-x-3 items-center text-[#333333]  cursor-pointer">
           <span>Segments</span>
           <GoArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
         </p>
@@ -19,7 +19,7 @@ const Segments = () => {
         />
 
         <div className="flex justify-center items-center flex-col bg-black/50 absolute inset-0 md:py-5 px-6 py-10">
-          <p className="bg-white p-5 md:p-8 max-w-[60rem] text-base md:text-lg text-[#333] text-center md:text-start leading-relaxed">
+          <p className="bg-white p-5 md:p-8 max-w-[60rem] text-base md:text-lg  text-center md:text-start leading-relaxed group-hover:underline decoration-[1.5px] underline-offset-4 group flex space-x-3 items-center text-[#333333]">
             The evolution and widespread adoption of AI are expected to expand
             markets and create new industries. To capture these burgeoning
             opportunities, we are actively pursuing a broad investment strategy,

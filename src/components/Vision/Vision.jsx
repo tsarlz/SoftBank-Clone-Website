@@ -27,13 +27,13 @@ const Vision = () => {
     <div className="sm:pt-10 pt-6 mt-5  ">
       {/* Title */}
       <div className="max-w-[60rem] mx-auto sm:mb-10 mb-5">
-        <p className="sm:text-3xl text-xl font-semibold hover:underline decoration-[1.5px] underline-offset-4 group flex space-x-3 items-center text-[#333] lg:ml-0 ml-5">
+        <p className="sm:text-3xl text-xl font-semibold hover:underline decoration-[1.5px] underline-offset-4 group  flex space-x-3 items-center text-[#333] lg:ml-0 ml-5  cursor-pointer">
           <span>Vision & Strategy</span>
           <GoArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
         </p>
       </div>
       {/* Contents */}
-      <div className="relative group overflow-hidden">
+      <div className="relative group overflow-hidden  cursor-pointer">
         <img
           className="lg:h-[65vh] md:h-[40vh] h-[45vh] w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
           src="/bg2.jpg"
@@ -78,7 +78,7 @@ const Vision = () => {
               }`}
             >
               <div
-                className={`lg:space-y-7 space-y-3 lg:mx-0 px-5 text-[#333] ${
+                className={`lg:space-y-7 space-y-3 lg:mx-0 px-5 text-[#333]  cursor-pointer ${
                   i % 2 === 0
                     ? "lg:w-1/2 w-full"
                     : "lg:w-1/3 md:w-[60%] w-full lg:mr-16 "
