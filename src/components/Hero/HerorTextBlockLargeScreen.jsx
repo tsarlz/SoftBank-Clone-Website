@@ -1,6 +1,6 @@
-import React from "react";
+import { motion } from "framer-motion";
 
-const HerorTextBlockLargeScreen = ({ activeIndex, title, content }) => {
+const HerorTextBlockLargeScreen = ({ activeIndex, title, content, i }) => {
   return (
     activeIndex === i && (
       <motion.div

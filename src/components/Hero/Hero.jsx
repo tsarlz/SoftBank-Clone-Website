@@ -78,6 +78,7 @@ const Hero = () => {
                 content={content}
                 title={title}
                 activeIndex={activeIndex}
+                i={i}
               />
             </div>
           </SwiperSlide>
