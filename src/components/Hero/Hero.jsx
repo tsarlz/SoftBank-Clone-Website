@@ -6,6 +6,8 @@ import "swiper/css/effect-fade";
 import "../../app/globals.css";
 import { Pagination, EffectFade, Autoplay } from "swiper/modules";
 import { motion } from "framer-motion";
+import HeroTextBlockSmallScreen from "./HeroTextBlockSmallScreen";
+import HerorTextBlockLargeScreen from "./HerorTextBlockLargeScreen";
 
 const Hero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -72,44 +74,18 @@ const Hero = () => {
               )}
 
               {/* Animated Text Block - Only for Large Screens */}
-              {activeIndex === i && (
-                <motion.div
-                  className="absolute md:bottom-8 bg-white py-5 space-y-3 px-10 max-w-[60rem] hidden md:block text-black"
-                  initial={{ y: 100, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  exit={{ y: 100, opacity: 0 }}
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
-                >
-                  <h1 className="border-b-2 border-black inline text-3xl">
-                    {title}
-                  </h1>
-                  <p className="underline decoration-[1.5px] underline-offset-4">
-                    {content}
-                  </p>
-                </motion.div>
-              )}
+              <HerorTextBlockLargeScreen
+                content={content}
+                title={title}
+                activeIndex={activeIndex}
+              />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
 
       {/* Animated Text Block - Only for Small Screens */}
-      <motion.div
-        className="w-full flex justify-center  md:hidden "
-        initial={{ y: 100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        exit={{ y: 100, opacity: 0 }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-      >
-        <div className="bg-white pt-3 space-y-3 px-5 max-w-[60rem] w-full text-center">
-          <h1 className="border-b-2 border-black inline text-[1.5rem] ">
-            {slides[activeIndex].title}
-          </h1>
-          <p className="underline decoration-[1.5px] underline-offset-4 text-sm">
-            {slides[activeIndex].content}
-          </p>
-        </div>
-      </motion.div>
+      <HeroTextBlockSmallScreen slides={slides} activeIndex={activeIndex} />
     </>
   );
 };

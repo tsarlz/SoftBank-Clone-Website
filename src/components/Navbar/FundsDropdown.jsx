@@ -7,7 +7,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdContentCopy, MdKeyboardArrowDown } from "react-icons/md";
 
 const FundsDropdown = () => {
   return (
@@ -15,13 +15,26 @@ const FundsDropdown = () => {
       <DropdownMenuTrigger className="flex items-center p-1 font-[350] border-b border-black">
         Our Funds <MdKeyboardArrowDown />
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-[100vw]">
-        <DropdownMenuLabel>My Account</DropdownMenuLabel>
+      <DropdownMenuContent>
         <DropdownMenuSeparator />
-        <DropdownMenuItem>Profile</DropdownMenuItem>
-        <DropdownMenuItem>Billing</DropdownMenuItem>
-        <DropdownMenuItem>Team</DropdownMenuItem>
-        <DropdownMenuItem>Subscription</DropdownMenuItem>
+        <DropdownMenuItem>
+          <p>
+            Vision Funds
+            <MdContentCopy size={15} className="inline ml-2" />
+          </p>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+          <p>
+            Latin American Funds
+            <MdContentCopy size={15} className="inline ml-2" />
+          </p>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+          <p>
+            Opportunity Funds
+            <MdContentCopy size={15} className="inline ml-2" />
+          </p>
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

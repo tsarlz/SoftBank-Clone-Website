@@ -2,12 +2,10 @@
 import Funds from "@/components/Funds/Funds";
 import Hero from "@/components/Hero/Hero";
 import Info from "@/components/Info/Info";
-
 import News from "@/components/News/News";
 import Relations from "@/components/Relations/Relations";
 import Segments from "@/components/Segments/Segments";
 import Sustainability from "@/components/Sustainability/Sustainability";
-
 import Vision from "@/components/Vision/Vision";
 import Warning from "@/components/Warning/Warning";
 import { useEffect, useState } from "react";
